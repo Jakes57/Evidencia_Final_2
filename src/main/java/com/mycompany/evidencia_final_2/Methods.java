@@ -82,10 +82,26 @@ public class Methods {
         while(scanner.hasNextLine()){
         System.out.println(scanner.nextLine());
         }
-        
+    
+    
         
 }
-   
+   public void printPacientes() throws FileNotFoundException{
+        File file = new File("pacientes.txt");
+        Scanner scanner = new Scanner(file);
+        
+        while(scanner.hasNextLine()){
+        System.out.println(scanner.nextLine());
+        }    
  
   
 }
+   public void printDoctores() throws FileNotFoundException{
+        File file = new File("doctores.txt");
+        Scanner scanner = new Scanner(file);
+        
+        while(scanner.hasNextLine()){
+        System.out.println(scanner.nextLine());
+        }   
+}
+   } 
