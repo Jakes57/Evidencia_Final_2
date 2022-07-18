@@ -26,9 +26,9 @@ public class Evidencia_Final_2 {
         System.out.println("2. Crear un medico");
         System.out.println("3. Crear una cita");
         System.out.println("4. Mostrar citas");
-        System.out.println("4. Mostrar pacientes");
-        System.out.println("4. Mostrar doctores");
-        System.out.println("5. Salir");
+        System.out.println("5. Mostrar pacientes");
+        System.out.println("6. Mostrar doctores");
+        System.out.println("7. Salir");
         System.out.println("Por favor digite el numero de la funcion deseada:");
         
         funcion = scanner.nextInt();
@@ -42,7 +42,7 @@ public class Evidencia_Final_2 {
             case 6 -> myMethods.printDoctores();
             case 7 -> System.out.println("Tenga un buen dia.");
         }     
-        }while (funcion !=4);
+        }while (funcion !=7);
         
     }
 }
