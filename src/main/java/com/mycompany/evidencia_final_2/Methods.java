@@ -9,6 +9,7 @@ package com.mycompany.evidencia_final_2;
  * @author jakes
  */
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -71,8 +72,20 @@ public class Methods {
             
             pw.println(citaID+cita);
         }
+        
+    }
+    
+    public void printCitas() throws FileNotFoundException{
+        File file = new File("citas.txt");
+        Scanner scanner = new Scanner(file);
+        
+        while(scanner.hasNextLine()){
+        System.out.println(scanner.nextLine());
+        }
+        
+        
 }
-
+   
  
   
 }
